@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-container {
+    @apply container mx-auto px-6 pb-10 pt-[90px];
+  }
+  .head {
+    @apply text-center text-orange-600 text-3xl mb-3 font-bold;
+  }
+  .form {
+    @apply flex flex-col gap-4 p-6 w-full md:w-[65%]  border-orange-600 border-2 rounded-md shadow-xl  mx-auto mt-8;
+  }
+  .label {
+    @apply font-semibold text-lg -mb-2;
+  }
+  .input {
+    @apply p-2 border-gray-400 border-2 outline-none focus:border-orange-600 rounded-md;
+  }
+  .err {
+    @apply text-sm block -mt-3 text-[#f00] font-bold;
+  }
+  .submit {
+    @apply w-full mt-4 px-4 py-2 text-xl rounded-full bg-orange-600 text-white hover:bg-orange-700 transition;
+  }
+  .link {
+    @apply text-black hover:text-orange-600 transition font-semibold;
+  }
+  .footerLink {
+    @apply text-gray-300 hover:text-white transition;
+  }
+}
+
+span[aria-hidden="true"] {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-top: 250px;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
